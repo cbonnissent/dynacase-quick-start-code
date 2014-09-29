@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<module xmlns="urn:dynacase:webinst:module/1.0" name="@moduleName@" release="@release@" version="@version@">
+    <description>cogip_audit</description>
+
+    <requires>
+        <module comp="ge" name="dynacase-core" version="3.2"/>
+    </requires>
+
+    <post-install>
+        <process command="programs/record_application COGIP_AUDIT"/>
+        <process command="programs/update_catalog"/>
+    </post-install>
+    <post-upgrade>
+        <process command="programs/pre_migration COGIP_AUDIT"/>
+        <process command="programs/record_application COGIP_AUDIT"/>
+        <process command="programs/post_migration COGIP_AUDIT"/>
+        <process command="programs/update_catalog"/>
+    </post-upgrade>
+</module>
