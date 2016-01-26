@@ -4,6 +4,7 @@
 
     <requires>
         <module comp="ge" name="dynacase-core" version="3.2"/>
+        <module name="dynacase-admin-uis" />
     </requires>
 
     <post-install>
