@@ -6,4 +6,5 @@ DOC,DIR,DIR_COGIP_AUDIT_FNC,,DIR_COGIP_AUDIT_FNC,
 BEGIN,,Fiche de non conformité,,,COGIP_AUDIT_FNC
 ICON,cogip_audit_fnc.png,,,,
 DFLDID,DIR_COGIP_AUDIT_FNC,,,,
+DEFAULT,caf_redacteur,::getUserId(),,,
 END,,,,,
